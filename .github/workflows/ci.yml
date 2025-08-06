@@ -37,7 +37,7 @@ jobs:
           node-version: 22
           cache: 'pnpm'
 
-      - run: pnpm install --frozen-lockfile
+      - run: pnpm install
       - run: pnpm exec playwright install --with-deps
 
       # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
