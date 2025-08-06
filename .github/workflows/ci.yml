@@ -12,12 +12,12 @@ permissions:
 
 jobs:
   main:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04.02
     steps:
       - uses: actions/checkout@v4
-        # with:
-        #   filter: tree:0
-        #   fetch-depth: 0
+        with:
+          filter: tree:0
+          fetch-depth: 0
 
       - uses: pnpm/action-setup@v4
         name: Install pnpm
